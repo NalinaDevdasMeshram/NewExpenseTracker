@@ -1,0 +1,96 @@
+.container{
+     width: 95%;
+    
+    border: 1px solid red;
+   background-color: #636363;
+   border-radius: 10px;
+   margin: 20px auto;
+   padding: 8px;
+   display: flex;
+   justify-content: center;
+   overflow: hidden;
+}
+.wallatBalnce, .addExpenses, .PieChartus{
+    color:#ffffff;
+    /* width:50vh; */
+    height: 200px;
+   border-radius: 10px;
+   border: 1px solid red;
+   overflow: hidden;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  }
+.wallatBalnce,.addExpenses{
+    background-color: #9B9B9B;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.PieChartus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+   }
+.btnBalance, .btnExpense{
+    width: 167px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    margin-top: 10px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+}
+.spantextBalance{
+    color: #89E148;
+}
+.spantextExpanse{
+    color: #FF9304;
+}
+.btnBalance{
+    background: linear-gradient(0DEG,#B5DC52 100%,#89E148 100%);
+}
+.btnExpense{
+    background: linear-gradient(90deg, #ff9595 0%, #ff4747 80%, #ff3838 100%);
+}
+.legend{
+    width: 350px; 
+    display: flex;
+    justify-content:space-around;
+     overflow: hidden;
+}
+
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+.legend p{
+    width: auto;
+    height:auto;
+    display: inline-block;
+    margin-bottom:0px;
+    padding: 0px 0px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  .legend span{
+    display: inline-block;
+    width: 29px;
+    height: 12px;
+    margin-right:10px;
+    border-radius:2px;
+    overflow: hidden;
+  }
