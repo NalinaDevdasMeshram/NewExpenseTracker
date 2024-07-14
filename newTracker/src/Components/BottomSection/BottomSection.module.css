@@ -4,25 +4,30 @@
     display: flex;
     flex-direction: column;
     border: 1px solid red;
-    background-color:#333;
+    overflow-y: auto;
 }
 .recentExpenses{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     padding: 20px;
     color: #ffffff;
     font-style: italic;
     font-family: 'ubuntu',serif;
     font-weight: 700;
 }
-.row {
-    width: 100%;
-    margin: 0;
-  }
-.recentTransaction, .topExpense{
+.headingExpense{
+  margin-right: 250px;
+}
+.recentTransaction,.topExpense{
+    height: 50%;
    background-color: #ffffff;
-   border-radius: 10px;
+   border-radius:10px;
    padding: 20px;
-    border:1px solid red
+   border:1px solid red
+}
+
+.expenseCategory{
+    flex: 1;
+    border:1px solid red;
 }
 

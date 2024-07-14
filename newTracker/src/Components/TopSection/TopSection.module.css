@@ -1,6 +1,5 @@
 .container{
      width: 95%;
-    
     border: 1px solid red;
    background-color: #636363;
    border-radius: 10px;
@@ -9,10 +8,13 @@
    display: flex;
    justify-content: center;
    overflow: hidden;
+   overflow-y: auto;
+  
 }
 .wallatBalnce, .addExpenses, .PieChartus{
     color:#ffffff;
     /* width:50vh; */
+    margin: 20px;
     height: 200px;
    border-radius: 10px;
    border: 1px solid red;
