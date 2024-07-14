@@ -6,26 +6,25 @@
    margin: 20px auto;
    padding: 8px;
    display: flex;
-   justify-content: center;
-   overflow: hidden;
-   overflow-y: auto;
-  
-}
-.wallatBalnce, .addExpenses, .PieChartus{
+  flex-direction: column;
+   overflow: auto;
+   
+  }
+ .wallatBalnce, .addExpenses, .PieChartus{
     color:#ffffff;
     /* width:50vh; */
     margin: 20px;
     height: 200px;
    border-radius: 10px;
-   border: 1px solid red;
+  
    overflow: hidden;
    display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-
-  }
+  position: relative;
+ }
 .wallatBalnce,.addExpenses{
     background-color: #9B9B9B;
     border: none;
@@ -38,8 +37,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
-   }
+}
 .btnBalance, .btnExpense{
     width: 167px;
     padding: 10px 20px;
@@ -88,6 +86,7 @@
     align-items: center;
     overflow: hidden;
   }
+  
   .legend span{
     display: inline-block;
     width: 29px;

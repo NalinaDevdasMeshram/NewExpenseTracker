@@ -3,31 +3,64 @@
     margin: 40px auto;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    border: 2px solid red;
     overflow-y: auto;
+    height: 100%;
+    padding: auto;
 }
+ .cardContainer{
+   border: 0px solid red;
+    display: flex;
+    justify-content:space-between;
+    height: 100%;
+    gap: 20px;
+ } 
 .recentExpenses{
     display: flex;
     justify-content:space-between;
-    padding: 20px;
+    padding: 8px;
     color: #ffffff;
     font-style: italic;
     font-family: 'ubuntu',serif;
     font-weight: 700;
+    border: 1px solid red;
 }
-.headingExpense{
-  margin-right: 250px;
+.headingRecent{
+    margin-right: 20px;
+} 
+ 
+.texttransaction{
+ border: 5px solid red;
+ display: flex;
+ justify-content: space-between;
 }
-.recentTransaction,.topExpense{
-    height: 50%;
+.recentTransaction ,
+.topExpense{
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
    background-color: #ffffff;
    border-radius:10px;
    padding: 20px;
+   margin-bottom: 20px;
    border:1px solid red
 }
+
 
 .expenseCategory{
     flex: 1;
     border:1px solid red;
+    padding: 2px;
 }
+.expenseItem{
+    display: flex;
+    align-items: center; 
+    margin-bottom: 10px;
+    border: 1px solid orange;
+}
+.expenseBar{
+    height: 10px;
+    background-color: #8784D2; 
+    border-radius: 5px;
+ }
 

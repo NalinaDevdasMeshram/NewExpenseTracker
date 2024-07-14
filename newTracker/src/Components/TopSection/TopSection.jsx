@@ -5,10 +5,16 @@ import styles from './TopSection.module.css'
 const TopSection = () => {
   const [balance, setBalance] = useState(4500);
   const [expenseAmount, setExpenseAmount] = useState(500);
-  // local storage function implementation
+  const [showAddIncomeForm, setShowAddIncomeForm] = useState(false)
+  const [showAddExpenseForm, setShowAddExpenseForm] = useState(false)
+  // handlingAddIncom balance
   const handleBalance =()=>{
    const newBalance = localStorage.getItem(balance)
    console.log(newBalance)
+  }
+  // handle Add/edit Expenses balance
+  const handleExpenseBalance =()=>{
+ // code here to write 
   }
  return (
     
@@ -23,7 +29,7 @@ const TopSection = () => {
          <div className='col-sm-12 col-md-6 col-lg-4 mb-3'> 
         <div className={styles.addExpenses}>
             <h3>Expenses:<span className={styles.spantextExpanse}> ₹{expenseAmount}</span></h3>
-            <button className={styles.btnExpense}>+ Add Expense</button>
+            <button className={styles.btnExpense} onClick={handleExpenseBalance}>+ Add Expense</button>
         </div> 
        </div>
       <div className='col-sm-12 col-md-6 col-lg-4 mb-3'> 
