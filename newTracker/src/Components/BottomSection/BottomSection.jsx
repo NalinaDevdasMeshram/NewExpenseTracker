@@ -1,52 +1,56 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import { useState } from 'react';
 import styles from './BottomSection.module.css';
-import EditIcon from '@mui/icons-material/Edit';
- import CancelPresentationIcon from '@mui/icons-material/CancelPresentation';
+import {Box, Card, Typography,Stack, Button} from '@mui/material';
+import HighlightOffIcon from '@mui/icons-material/HighlightOff';
+import CreateIcon from '@mui/icons-material/Create';
+
+
 const BottomSection = () => {
+  const [selectCategory, SetselectCategory] = useState('');
+  const [date , setDate] = useState('');
+  const [amount, setAmount] = useState('');
   return (
-    <div className={styles.BottomSectionContainer}>
-         <div className='row w-100'>
-        <div className='col-12'> 
+    <Box>
+      <Box className={styles.recentExpense}>
+      <Typography variant='h5' className={styles.recentTransaction}>
+          Recent Transaction
+          </Typography>
+          <Typography variant='h5' className={styles.topExpense}>
+          Top Expenses
+        </Typography>
        
-            <div className={styles.recentExpenses}>
-            <h3 className={styles.headingRecent}>Recent Transaction</h3>
-            <h3 className={styles.headingExpense}>Top Expenses</h3>
-            </div>
-        </div>
-        <div className={styles.cardContainer}> 
-        <div className='col-sm-12 col-md-6 col-lg-4 mb-3'>
-        
-        <div className={styles.recentTransaction}>
-           <div className={styles.texttransaction}>
-              <div>
-                <span>Samosa</span>
-                <span>March 20, 2024</span>
-              </div>
-              <span>₹150</span>
-              <span>{<CancelPresentationIcon/>}</span>
-              <span>{<EditIcon/>}</span>
-            </div>
-          </div>
-       </div>
-        <div className='col-sm-12 col-md-6 col-lg-4 mb-3'> 
-        <div className={styles.topExpense}>
-        <div className={styles.expenseItem}>
-              <span className={styles.expenseCategory}>Entertainment</span>
-              <div className={styles.expenseBar} style={{ width: '100%' }}></div>
-            </div>
-            <div className={styles.expenseItem}>
-              <span className={styles.expenseCategory}>Food</span>
-              <div className={styles.expenseBar} style={{ width: '100%' }}></div>
-             </div>
-             <div className={styles.expenseItem}>
-            <span className={styles.expenseCategory}>Travel</span>
-            <div className={styles.expenseBar} style={{ width: '100%' }}></div>
-          </div>
-         </div>
-        </div>
-        </div>
-       </div>
-    </div>
+      </Box>
+      <Box  className={styles.Bottomcontainer}sx={{ p: 2}}>
+      <Stack direction={{xs:"column", md:"row"}}
+         spacing={5}
+         display='flex'
+         justifyContent='space-between'
+         alignItems= 'center'>
+        <Card className={styles.cards}>
+        <Box className={styles.transactiontext}>
+        <Typography>samosa</Typography>
+        <Typography>month dd yyyy</Typography>
+        <Typography>amount</Typography>
+        <Button><HighlightOffIcon/></Button>
+        <Button><CreateIcon/></Button>
+        <hr/>
+        </Box>
+      </Card>
+      <Card className={styles.cards}>
+      <Box className={styles.expenseBar}>
+        <span className={styles.expenseCategory}>Entertainment</span>
+        <div className={styles.expenseBar} style={{ width: '100%' }}></div>
+      </Box>
+
+      <p><span>Food</span></p>
+      <p><span>Travel</span></p>
+     
+      </Card>
+     </Stack>
+     </Box>
+    </Box>
+           
   )
 }
 

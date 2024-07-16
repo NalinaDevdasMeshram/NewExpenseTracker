@@ -1,4 +1,75 @@
-.BottomSectionContainer{
+.Bottomcontainer{
+    width:95%;
+    height: 100%;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin: 10px 50px;
+    padding: 8px;
+    display: flex;
+   flex-direction: column;
+    overflow: auto;
+}
+.cards{
+    width:80%;
+    border-radius: 10px;
+    background-color:#9B9B9B;
+     height:280px;
+    }
+/* .cardsExpens{
+    width:40%;
+    border-radius: 10px;
+    background-color:#9B9B9B;
+     height:200px;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+} */
+ .recentExpense{
+    display: flex;
+    padding: 8px;
+    color: #ffffff;
+    font-style: italic;
+    font-family: 'ubuntu',serif;
+    font-weight: 700;
+    border-radius: 15px;
+    border: 1px solid red;
+ }
+ .topExpense{
+padding-left: 40%;
+color: #ffffff;
+font-style: italic;
+font-family: 'ubuntu',serif;
+font-weight: 700;
+}  
+.recentTransaction{
+    margin: 40px 20px;
+    padding: 150px;
+    display: flex;
+    padding: 10px;
+    color: #ffffff;
+    font-style: italic;
+    font-family: 'ubuntu',serif;
+    font-weight: 700;
+    border: 1px solid red;
+}
+
+.expenseBar{
+    height: 10px;
+    background-color: #8784D2; 
+    border-radius: 5px;
+ }
+ .expenseCategory{
+    flex: 1;
+    border:1px solid red;
+    padding: 2px;
+ }
+ .expenseItem{
+    display: flex;
+    align-items: center; 
+    margin-bottom: 10px;
+    border: 1px solid orange;
+}
+/* .BottomSectionContainer{
     width:95%;
     margin: 40px auto;
     display: flex;
@@ -17,7 +88,6 @@
  } 
 .recentExpenses{
     display: flex;
-    justify-content:space-between;
     padding: 8px;
     color: #ffffff;
     font-style: italic;
@@ -26,8 +96,12 @@
     border: 1px solid red;
 }
 .headingRecent{
-    margin-right: 20px;
+    margin-right: 150px;
 } 
+.headingExpense{
+  margin-left: 40%;
+  
+}
  
 .texttransaction{
  border: 5px solid red;
@@ -45,8 +119,6 @@
    margin-bottom: 20px;
    border:1px solid red
 }
-
-
 .expenseCategory{
     flex: 1;
     border:1px solid red;
@@ -63,4 +135,4 @@
     background-color: #8784D2; 
     border-radius: 5px;
  }
-
+ */

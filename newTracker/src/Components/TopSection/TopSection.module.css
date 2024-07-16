@@ -1,97 +1,82 @@
-.container{
-     width: 95%;
+.topcontainer{
     border: 1px solid red;
-   background-color: #636363;
-   border-radius: 10px;
-   margin: 20px auto;
-   padding: 8px;
-   display: flex;
-  flex-direction: column;
-   overflow: auto;
-   
-  }
- .wallatBalnce, .addExpenses, .PieChartus{
-    color:#ffffff;
-    /* width:50vh; */
-    margin: 20px;
-    height: 200px;
-   border-radius: 10px;
-  
-   overflow: hidden;
-   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
+    background-color: #636363;
+    border-radius: 10px;
+    margin: 20px 50px;
+    padding: 8px;
+    display: flex;
+   flex-direction: column;
+    overflow: auto;
  }
-.wallatBalnce,.addExpenses{
-    background-color: #9B9B9B;
-    border: none;
-    border-radius: 5px;
-    padding: 8px 16px;
-    cursor: pointer;
+.cards{
+    width:80%;
+    border-radius: 10px;
+    background-color:#9B9B9B;
+     height:200px;
+     display:flex;
+     justify-content: center;
+     align-items: center;
 }
-.PieChartus{
+
+ .button {
+    margin-top:100px; 
+} 
+.btnIncome{
+   
+    color: #ffffff;
+     font-weight: 400;
+    background: linear-gradient(0DEG,#B5DC52 100%,#89E148 100%); 
+}
+.btnExpense{
+     color: #ffffff;
+     font-weight: 400;
+    background: linear-gradient(90deg, #ff9595 0%, #ff4747 80%, #ff3838 100%);
+}
+.spantext{
+    color: #89E148;
+}
+.spantext1{
+    color: #FF9304;
+}
+.pieCard{
+    background-color: #636363; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.btnBalance, .btnExpense{
-    width: 167px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    color: #ffffff;
-    margin-top: 10px;
-    font-weight: 500;
-    font-family: 'Ubuntu', sans-serif;
-}
-.spantextBalance{
-    color: #89E148;
-}
-.spantextExpanse{
-    color: #FF9304;
-}
-.btnBalance{
-    background: linear-gradient(0DEG,#B5DC52 100%,#89E148 100%);
-}
-.btnExpense{
-    background: linear-gradient(90deg, #ff9595 0%, #ff4747 80%, #ff3838 100%);
-}
-.legend{
-    width: 350px; 
+    border: 1px solid red;
+} 
+ .legend{
+     width: 350px;
+     height: 20px; 
     display: flex;
     justify-content:space-around;
      overflow: hidden;
-}
-
-
-.mb-3 {
-    margin-bottom: 1rem;
-}
+    border:2px solid red
+} 
 
 .legend p{
     width: auto;
     height:auto;
     display: inline-block;
-    margin-bottom:0px;
-    padding: 0px 0px;
+    margin:1px;
+    padding: 1px;
     border-radius: 5px;
     color: #ffffff;
     font-family: 'Ubuntu', sans-serif;
     display: flex;
     align-items: center;
     overflow: hidden;
-  }
-  
-  .legend span{
+}
+
+.legend span{
     display: inline-block;
     width: 29px;
     height: 12px;
     margin-right:10px;
     border-radius:2px;
     overflow: hidden;
-  }
+  }  
+ 
+  
+ 
