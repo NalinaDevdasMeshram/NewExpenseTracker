@@ -1,12 +1,11 @@
 import Home from "./Components/Home/Home"
-
+import{ SnackbarProvider }from "notistack"
 
 function App() {
  return (
-   <div>
-       <Home md='row' sm='column'/>
-       
-    </div>
+   <SnackbarProvider>
+       <Home/>
+   </SnackbarProvider>
   )
 }
 

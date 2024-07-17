@@ -1,20 +1,36 @@
-.backgroundBody{
-    position: fixed;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background:#ffffffC4;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
+.button{
+    background: #E3E3E3;
+    border:0;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 15px;
+    padding:12px 30px;
+    color:#000;
+    cursor: pointer;
 }
 
-.btn{
-    background-color:  #F4BB4A;
+.primary{
+    background: #F4BB4A;
+    color: #FFFFFF;
 }
-.btn:hover{
-    background-color:  #F4BB4A;
+
+.secondary{
+    background: #E3E3E3;
+    color:#000;
+    font-weight: 400;
+    width: fit-content;
+}
+
+.success{
+    background: linear-gradient(90deg, #B5DC52, #89E148);
+    color:#fff;
+}
+
+.failure{
+    background: linear-gradient(90deg, #FF9595, #FF4747, #FF3838);
+    color:#fff;
+}
+
+.shadow{
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
 }
