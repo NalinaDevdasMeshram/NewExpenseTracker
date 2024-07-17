@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import TransactionCard from "../TransactionCard/TransactionCard";
 import styles from "./Transaction.module.css";
 import Modal from '../Modal/Modals';

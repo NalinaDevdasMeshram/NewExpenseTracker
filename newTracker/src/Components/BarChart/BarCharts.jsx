@@ -1,13 +1,13 @@
- import  { PureComponent } from "react";
+/* eslint-disable react/prop-types */
+
 import {
   BarChart,
   Bar,
-  Cell,
+ 
   XAxis,
   YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
+
+  
   ResponsiveContainer,
 } from "recharts";
 import styles from "./BarChart.module.css";

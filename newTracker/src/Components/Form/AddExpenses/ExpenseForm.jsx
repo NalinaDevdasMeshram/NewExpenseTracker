@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import styles from "./AddExpense.module.css";
 import Button from "../../Button/Buttons";
 import { useState } from "react";
